@@ -72,7 +72,7 @@ if (!is_null($events['events'])) {
 					]
 				}						
 			}";
-			$message = json_decode($a3);
+			$messages = json_decode($a3);
 			$data = [
 				'replyToken' => $replyToken,
 				'messages' => [$messages],
