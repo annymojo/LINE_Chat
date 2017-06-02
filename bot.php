@@ -42,7 +42,7 @@ if (!is_null($events['events'])) {
       "columns": [
           {
             "title": "Advance Media",
-            "text": "Advanced Media is making it possible to communicate with machines as part of our everyday lives.",
+            "text": "Communicate with machines as part of our everyday lives",
             "actions": [
                 {
                     "type": "uri",
@@ -58,7 +58,7 @@ if (!is_null($events['events'])) {
           },
           {
             "title": "AmiVoice Thai",
-            "text": "AMIVOICE THAI provides comprehensive software solutions integrated with consulting services for all commercial enterprises",
+            "text": "Consulting services for all commercial enterprises",
             "actions": [
                 {
                     "type": "uri",
