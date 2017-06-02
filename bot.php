@@ -23,7 +23,7 @@ if (!is_null($events['events'])) {
 				'text' => 'สวัสดีค่ะ'
 			];*/
 	  
-			$messages = array(
+			$messages = (object) array(
 				array(
 					"type" => "text",
 					"text" => "สวัสดีค่ะ"	
