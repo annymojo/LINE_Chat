@@ -41,24 +41,36 @@ if (!is_null($events['events'])) {
       "type": "carousel",
       "columns": [
           {
-            "title": "this is menu",
-            "text": "description",
+			"thumbnailImageUrl" : "https://www.advanced-media.co.jp/common/images/corporate/top_message/president.jpg",
+            "title": "代表取締役会長兼社長 代表執行役員 鈴木 清幸",
+            "text": "Advanced Media is making it possible to communicate with machines as part of our everyday lives.",
             "actions": [
                 {
                     "type": "uri",
-                    "label": "View detail",
-                    "uri": "http://example.com/page/111"
+                    "label": "Mobile",
+                    "uri": "https://www.advanced-media.co.jp/english/solution/mobile"
+                },
+				{
+                    "type": "uri",
+                    "label": "Conference Proceeding",
+                    "uri": "https://www.advanced-media.co.jp/english/solution/conferenceproceedings"
                 }
             ]
           },
           {
-            "title": "this is menu",
-            "text": "description",
+			"thumbnailImageUrl" : "https://www.advanced-media.co.jp/common/images/advm_contents_amivoice_images_strong1.png",
+            "title": "AmiVoice Thai",
+            "text": "AMIVOICE THAI provides comprehensive software solutions integrated with consulting services for all commercial enterprises",
             "actions": [
                 {
                     "type": "uri",
-                    "label": "View detail",
-                    "uri": "http://example.com/page/222"
+                    "label": "Company Profile",
+                    "uri": "http://www.amivoicethai.com"
+                },
+				{
+                    "type": "uri",
+                    "label": "Logistic",
+                    "uri": "https://www.advanced-media.co.jp/english/solution/logistics"
                 }
             ]
           }
