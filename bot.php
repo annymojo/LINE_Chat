@@ -33,8 +33,8 @@ if (!is_null($events['events'])) {
 
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
-			$a3 = '			{
-							{
+			$a3 = '
+			{
 				"type" : "tempate",
 				"altText" : "Carousel template",
 				"template" : {
@@ -73,7 +73,7 @@ if (!is_null($events['events'])) {
 					]
 				}						
 			}';
-			$messages = json_decode($a3);
+			$messages = json_decode($a3, true);
 			$data = [
 				'replyToken' => $replyToken,
 				'messages' => [$messages],
