@@ -14,7 +14,7 @@ if (!is_null($events['events'])) {
 		
 		//&&  $event['message']['text'] == 'hi'
 		// Build message to reply back
-		if ($event['type'] == 'message' && $event['message']['type'] == 'text' )
+		if ($event['type'] == 'message' && $event['message']['type'] == 'text' && $event['message']['text'] == 'hi')
 		{
 			// Reply with Text
 			$messages = [
