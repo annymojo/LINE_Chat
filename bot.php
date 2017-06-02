@@ -17,10 +17,16 @@ if (!is_null($events['events'])) {
 			$replyToken = $event['replyToken'];
 
 			// Build message to reply back
+			/*
 			$messages = [
 				'type' => 'text',
-				'text' => 'ไงเพื่อน'
-				//'text' => $text
+				'text' => $text
+			];*/
+
+			$messages = [
+				'type' => 'sticker',
+				'packageId' => '1',
+				'stickerId' => '1'
 			];
 
 			// Make a POST Request to Messaging API to reply to sender
