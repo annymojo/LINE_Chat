@@ -48,11 +48,6 @@ if (!is_null($events['events'])) {
                     "type": "uri",
                     "label": "Mobile",
                     "uri": "https://www.advanced-media.co.jp/english/solution/mobile"
-                },
-				{
-                    "type": "uri",
-                    "label": "Conference Proceeding",
-                    "uri": "https://www.advanced-media.co.jp/english/solution/conferenceproceedings"
                 }
             ]
           },
@@ -64,11 +59,6 @@ if (!is_null($events['events'])) {
                     "type": "uri",
                     "label": "Company Profile",
                     "uri": "http://www.amivoicethai.com"
-                },
-				{
-                    "type": "uri",
-                    "label": "Logistic",
-                    "uri": "https://www.advanced-media.co.jp/english/solution/logistics"
                 }
             ]
           }
