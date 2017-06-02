@@ -33,6 +33,46 @@ if (!is_null($events['events'])) {
 
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
+			$a3 = "			{
+				'type' => 'tempate',
+				'altText' => 'Carousel template',
+				'template' => {
+					'type' => 'carousel',
+					'columns' => [
+						{
+							'text' => 'Description 1',
+							'actions' => [
+								{
+									'type' => 'uri',
+									'label' => 'Mobile',
+									'uri' => 'https://www.advanced-media.co.jp/english/solution/mobile'
+								},
+								{
+									'type' => 'uri',
+									'label' => 'Conference Proceeding',
+									'uri' => 'https://www.advanced-media.co.jp/english/solution/conferenceproceedings'
+								}
+							]
+						},
+						{
+							'text' => 'Description 2',
+							'actions' => [
+								{
+									'type' => 'uri',
+									'label' => 'Mobile',
+									'uri' => 'https://www.advanced-media.co.jp/english/solution/mobile'
+								},
+								{
+									'type' => 'uri',
+									'label' => 'Conference Proceeding',
+									'uri' => 'https://www.advanced-media.co.jp/english/solution/conferenceproceedings'
+								}
+							]
+						}
+					]
+				}						
+			}";
+			$message = json_decode($a3);
 			$data = [
 				'replyToken' => $replyToken,
 				'messages' => [$messages],
