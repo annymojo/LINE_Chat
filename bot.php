@@ -82,6 +82,8 @@ if (!is_null($events['events'])) {
 			];
 			$post = json_encode($data);
 			$headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
+			
+			echo $post. "\r\n";
 
 			$ch = curl_init($url);
 			curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
@@ -90,7 +92,10 @@ if (!is_null($events['events'])) {
 			curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 			curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
 			$result = curl_exec($ch);
+			$curl_info = curl_getinfo($ch);
 			curl_close($ch);
+			
+			print_r($curl_info);
 
 			echo $result . "\r\n";
 		}
