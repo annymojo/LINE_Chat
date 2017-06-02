@@ -24,17 +24,17 @@ if (!is_null($events['events'])) {
 			];*/
 			
 			$ret = '
-			{
+			[
 				{
-					"type"" : "text",
-					"text"" : "สวัสดีค่ะ"
+					"type" : "text",
+					"text" : "สวัสดีค่ะ"
 				},
 				{
-					"type"" : "sticker",
+					"type" : "sticker",
 					"packageId" : "2",
 					"stickerId" : "155"
 				}
-			}';
+			]';
 			$messages = json_decode($ret);
 			
 		}
