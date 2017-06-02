@@ -22,53 +22,13 @@ if (!is_null($events['events'])) {
 			$messages = [
 				'type' => 'text',
 				'text' => $text
-			];
+			];*/
 
 			// Reply with Sticker
 			$messages = [
 				'type' => 'sticker',
 				'packageId' => '2',
 				'stickerId' => '145'
-			];*/
-
-			$messages = [
-				'type' => 'tempate',
-				'altText' => 'Carousel template',
-				'template' => [
-					'type' => 'carousel',
-					'columns' => [
-						[
-							'text' => 'Description 1',
-							'actions' => [
-								[
-									'type' => 'uri',
-									'label' => 'Mobile',
-									'uri' => 'https://www.advanced-media.co.jp/english/solution/mobile'
-								],
-								[
-									'type' => 'uri',
-									'label' => 'Conference Proceeding',
-									'uri' => 'https://www.advanced-media.co.jp/english/solution/conferenceproceedings'
-								]
-							]
-						],
-						[
-							'text' => 'Description 2',
-							'actions' => [
-								[
-									'type' => 'uri',
-									'label' => 'Mobile',
-									'uri' => 'https://www.advanced-media.co.jp/english/solution/mobile'
-								],
-								[
-									'type' => 'uri',
-									'label' => 'Conference Proceeding',
-									'uri' => 'https://www.advanced-media.co.jp/english/solution/conferenceproceedings'
-								]
-							]
-						]
-					]
-				]						
 			];
 
 			// Make a POST Request to Messaging API to reply to sender
