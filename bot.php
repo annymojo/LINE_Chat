@@ -35,43 +35,9 @@ if (!is_null($events['events'])) {
 			$url = 'https://api.line.me/v2/bot/message/reply';
 			$a3 = '
 			{
-				"type" : "tempate",
-				"altText" : "Carousel template",
-				"template" : {
-					"type" : "carousel",
-					"columns" : [
-						{
-							"text" : "Description 1",
-							"actions" : [
-								{
-									"type" : "uri",
-									"label" : "Mobile",
-									"uri" : "https://www.advanced-media.co.jp/english/solution/mobile"
-								},
-								{
-									"type" : "uri",
-									"label" : "Conference Proceeding",
-									"uri" : "https://www.advanced-media.co.jp/english/solution/conferenceproceedings"
-								}
-							]
-						},
-						{
-							"text" : "Description 2",
-							"actions" : [
-								{
-									"type" : "uri",
-									"label" : "Mobile",
-									"uri" : "https://www.advanced-media.co.jp/english/solution/mobile"
-								},
-								{
-									"type" : "uri",
-									"label" : "Conference Proceeding",
-									"uri" : "https://www.advanced-media.co.jp/english/solution/conferenceproceedings"
-								}
-							]
-						}
-					]
-				}						
+				"type" : "sticker",
+				"packageId" : "2",
+				"stickerId" : "155"
 			}';
 			$messages = json_decode($a3);
 			$data = [
