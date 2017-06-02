@@ -17,10 +17,26 @@ if (!is_null($events['events'])) {
 		if ($event['type'] == 'message' && $event['message']['type'] == 'text' && $event['message']['text'] == 'hi')
 		{
 			// Reply with Text
+			/*
 			$messages = [
 				'type' => 'text',
-				'text' => $event['message']['text']
-			];
+				'text' => 'สวัสดีค่ะ'
+			];*/
+			
+			$ret = '
+			{
+				{
+					"type"" : "text",
+					"text"" : "สวัสดีค่ะ"
+				},
+				{
+					"type"" : "sticker",
+					"packageId" : "2",
+					"stickerId" : "155"
+				}
+			}';
+			$messages = json_decode($ret);
+			
 		}
 		else if($event['type'] == 'message' && $event['message']['type'] == 'sticker')
 		{
