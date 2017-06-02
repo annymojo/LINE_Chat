@@ -18,15 +18,60 @@ if (!is_null($events['events'])) {
 
 			// Build message to reply back
 			/*
+			// Reply with Text
 			$messages = [
 				'type' => 'text',
 				'text' => $text
+			];
+
+			// Reply with Sticker
+			$messages = [
+				'type' => 'sticker',
+				'packageId' => '2',
+				'stickerId' => '145'
 			];*/
 
 			$messages = [
-				'type' => 'sticker',
-				'packageId' => '1',
-				'stickerId' => '1'
+				'type' => 'tempate',
+				'altText' => 'Carousel template',
+				'template' => [
+					'type' => 'carousel',
+					'columns' => [
+						[
+							'thumbnailImageUrl' => '',
+							'title' => 'Menu 1',
+							'text' => 'Description 1',
+							'actions' => [
+								[
+									'type' => 'uri',
+									'label' => 'Mobile',
+									'uri' => 'https://www.advanced-media.co.jp/english/solution/mobile'
+								],
+								[
+									'type' => 'uri',
+									'label' => 'Conference Proceeding',
+									'uri' => 'https://www.advanced-media.co.jp/english/solution/conferenceproceedings'
+								]
+						],
+						[
+							'thumbnailImageUrl' => '',
+							'title' => 'Menu 1',
+							'text' => 'Description 1',
+							'actions' => [
+								[
+									'type' => 'uri',
+									'label' => 'Mobile',
+									'uri' => 'https://www.advanced-media.co.jp/english/solution/mobile'
+								],
+								[
+									'type' => 'uri',
+									'label' => 'Conference Proceeding',
+									'uri' => 'https://www.advanced-media.co.jp/english/solution/conferenceproceedings'
+								]
+						]
+				]		
+						
+								
 			];
 
 			// Make a POST Request to Messaging API to reply to sender
