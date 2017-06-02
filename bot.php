@@ -30,9 +30,8 @@ if (!is_null($events['events'])) {
 					"text" : "สวัสดีค่ะ"
 				},
 				{
-					"type" : "sticker",
-					"packageId" : "2",
-					"stickerId" : "155"
+					"type" : "text",
+					"text" : "สวัสดีค่ะ"
 				}
 			]';
 			$messages = json_decode($ret);
