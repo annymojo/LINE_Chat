@@ -41,8 +41,7 @@ if (!is_null($events['events'])) {
       "type": "carousel",
       "columns": [
           {
-			"thumbnailImageUrl" : "https://www.advanced-media.co.jp/common/images/corporate/top_message/president.jpg",
-            "title": "代表取締役会長兼社長 代表執行役員 鈴木 清幸",
+            "title": "Advance Media",
             "text": "Advanced Media is making it possible to communicate with machines as part of our everyday lives.",
             "actions": [
                 {
@@ -58,7 +57,6 @@ if (!is_null($events['events'])) {
             ]
           },
           {
-			"thumbnailImageUrl" : "https://www.advanced-media.co.jp/common/images/advm_contents_amivoice_images_strong1.png",
             "title": "AmiVoice Thai",
             "text": "AMIVOICE THAI provides comprehensive software solutions integrated with consulting services for all commercial enterprises",
             "actions": [
