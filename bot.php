@@ -34,44 +34,43 @@ if (!is_null($events['events'])) {
 			$messages = [
 				'type' => 'tempate',
 				'altText' => 'Carousel template',
-				'template' => [
+				'template' => {
 					'type' => 'carousel',
 					'columns' => [
-						[
+						{
 							'thumbnailImageUrl' => '',
 							'title' => 'Menu 1',
 							'text' => 'Description 1',
 							'actions' => [
-								[
+								{
 									'type' => 'uri',
 									'label' => 'Mobile',
 									'uri' => 'https://www.advanced-media.co.jp/english/solution/mobile'
-								],
-								[
+								},
+								{
 									'type' => 'uri',
 									'label' => 'Conference Proceeding',
 									'uri' => 'https://www.advanced-media.co.jp/english/solution/conferenceproceedings'
-								]
-						],
-						[
+								}
+						},
+						{
 							'thumbnailImageUrl' => '',
-							'title' => 'Menu 1',
-							'text' => 'Description 1',
+							'title' => 'Menu 2',
+							'text' => 'Description 2',
 							'actions' => [
-								[
+								{
 									'type' => 'uri',
 									'label' => 'Mobile',
 									'uri' => 'https://www.advanced-media.co.jp/english/solution/mobile'
-								],
-								[
+								},
+								{
 									'type' => 'uri',
 									'label' => 'Conference Proceeding',
 									'uri' => 'https://www.advanced-media.co.jp/english/solution/conferenceproceedings'
-								]
-						]
-				]		
-						
-								
+								}
+						}
+					]
+				}						
 			];
 
 			// Make a POST Request to Messaging API to reply to sender
