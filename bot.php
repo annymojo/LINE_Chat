@@ -22,17 +22,17 @@ if (!is_null($events['events'])) {
 				'type' => 'text',
 				'text' => 'สวัสดีค่ะ'
 			];*/
-			
-			$messages = array(
-				array(
+	  
+			$messages = [
+				{
 					"type" => "text",
 					"text" => "สวัสดีค่ะ"	
-				),
-				array(
+				},
+				{
 					"type" => "text",
 					"text" => "สวัสดีค่ะ"	
-				)
-			);
+				}
+			];
 			//$messages = json_decode($ret);
 			
 		}
