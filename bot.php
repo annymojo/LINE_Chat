@@ -35,10 +35,36 @@ if (!is_null($events['events'])) {
 			$url = 'https://api.line.me/v2/bot/message/reply';
 			$a3 = '
 			{
-				"type" : "sticker",
-				"packageId" : "2",
-				"stickerId" : "155"
-			}';
+  "type": "template",
+  "altText": "this is a carousel template",
+  "template": {
+      "type": "carousel",
+      "columns": [
+          {
+            "title": "this is menu",
+            "text": "description",
+            "actions": [
+                {
+                    "type": "uri",
+                    "label": "View detail",
+                    "uri": "http://example.com/page/111"
+                }
+            ]
+          },
+          {
+            "title": "this is menu",
+            "text": "description",
+            "actions": [
+                {
+                    "type": "uri",
+                    "label": "View detail",
+                    "uri": "http://example.com/page/222"
+                }
+            ]
+          }
+      ]
+  }
+}';
 			$messages = json_decode($a3);
 			$data = [
 				'replyToken' => $replyToken,
