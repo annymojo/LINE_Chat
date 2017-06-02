@@ -19,7 +19,7 @@ if (!is_null($events['events'])) {
 			// Reply with Text
 			$messages = [
 				'type' => 'text',
-				'text' => 'หวัดดี'
+				'text' => $event['message']['text']
 			];
 		}
 		else if($event['type'] == 'message' && $event['message']['type'] == 'sticker')
