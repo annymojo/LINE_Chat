@@ -24,17 +24,13 @@ if (!is_null($events['events'])) {
 			];*/
 	  
 			$ret = '
-			{
-				{
-					"type": "text",
-					"altText": "สวัสดีค่ะ"
-				},
+			
 				{
 					"type": "text",
 					"altText": "สวัสดีค่ะ"
 				}
 			  
-			}';
+			';
 			$messages = json_decode($ret);
 			
 		}
