@@ -30,7 +30,7 @@ if (!is_null($events['events'])) {
 			$a3 = array();
 			$a3[] = $messages1;
 			$a3[] = $messages1;
-			$messages = json_decode($a3);
+			$messages = json_decode($messages1);
 			
 		}
 		else if($event['type'] == 'message' && $event['message']['type'] == 'sticker')
