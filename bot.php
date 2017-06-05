@@ -24,12 +24,10 @@ if (!is_null($events['events'])) {
 			];*/
 	  
 			$ret = '
-			
 				{
 					"type": "text",
-					"altText": "สวัสดีค่ะ"
+					"text": "สวัสดีค่ะ"
 				}
-			  
 			';
 			$messages = json_decode($ret);
 			
