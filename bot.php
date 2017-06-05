@@ -23,15 +23,19 @@ if (!is_null($events['events'])) {
 				'text' => 'สวัสดีค่ะ'
 			];*/
 	  
-			$messages1 = [
-				'type' => 'text',
-				'text' => 'สวัสดีค่ะ'
-			];
-			
-			$a3 = array();
-			$a3[] = $messages1;
-			$a3[] = $messages1;
-			$messages = json_decode($messages1);
+			$ret = '
+			{
+				{
+					"type": "text",
+					"altText": "สวัสดีค่ะ"
+				},
+				{
+					"type": "text",
+					"altText": "สวัสดีค่ะ"
+				}
+			  
+			}';
+			$messages = json_decode($ret);
 			
 		}
 		else if($event['type'] == 'message' && $event['message']['type'] == 'sticker')
