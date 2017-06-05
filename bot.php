@@ -23,10 +23,10 @@ if (!is_null($events['events'])) {
 				'text' => 'สวัสดีค่ะ'
 			];*/
 	  
-			$messages = [
+			$messages = array(
 					"type" => "text",
 					"text" => "สวัสดีค่ะ"
-			];
+			);
 			$a3 = array();
 			$a3[] = $messages;
 			$a3[] = $messages;
