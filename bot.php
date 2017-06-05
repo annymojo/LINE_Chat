@@ -14,30 +14,17 @@ if (!is_null($events['events'])) {
 		
 		//&&  $event['message']['text'] == 'hi'
 		// Build message to reply back
-		if ($event['type'] == 'message' && $event['message']['type'] == 'text' && $event['message']['text'] == 'Hi')
+		if ($event['type'] == 'message' && $event['message']['type'] == 'text' && strtolower($event['message']['text']) == 'hi')
 		{
 			// Reply with Text
-			/*
 			$messages = [
 				'type' => 'text',
 				'text' => 'สวัสดีค่ะ'
-			];*/
-	  
-			$ret = '
-			{
-				{
-					"type": "text",
-					"text": "สวัสดีค่ะ"
-				},
-				{
-					"type": "text",
-					"text": "สวัสดีค่ะ"
-				}
-			}';
-			$messages = json_decode($ret);
+			];
 			
 		}
-		else if($event['type'] == 'message' && $event['message']['type'] == 'sticker')
+		else if(($event['type'] == 'message' && $event['message']['type'] == 'sticker') || 
+				($event['type'] == 'message' && $event['message']['type'] == 'text' && strtolower($event['message']['text']) == 'sticker'))
 		{
 			// Reply with Sticker
 			$messages = [
