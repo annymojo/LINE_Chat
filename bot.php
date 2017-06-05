@@ -28,6 +28,10 @@ if (!is_null($events['events'])) {
 				{
 					"type": "text",
 					"text": "สวัสดีค่ะ"
+				},
+				{
+					"type": "text",
+					"text": "สวัสดีค่ะ"
 				}
 			}';
 			$messages = json_decode($ret);
